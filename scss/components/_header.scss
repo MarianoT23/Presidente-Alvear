@@ -1,0 +1,25 @@
+$headerHeight: 120px;
+
+nav {
+    background-color: $primary;
+    display: flex;
+    height: $headerHeight;
+
+    .logo-container {
+        width: 30%;
+
+        img {
+            max-width: 180px;
+        }
+    }
+
+    ul {
+        width: 70%;
+        display: flex;
+        list-style: none;
+
+        li {
+            color: $white;
+        }
+    }
+}
