@@ -1,0 +1,13 @@
+.hero {
+    margin-top: $headerHeight;
+
+    &__container {
+        background-image: url('img/imagenes/estacion- antigua.jpg'); 
+        background-repeat: no-repeat; background-size: cover; background-position: center;
+        height: 600px;
+    }
+
+    &__header {
+        color: $white;
+    }
+}

@@ -1,21 +1,46 @@
-nav {
-  background-color: #049F47;
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+header nav {
   display: flex;
-  height: 120px;
+  height: 100%;
 }
-nav .logo-container {
+header nav .logo-container {
   width: 30%;
+  height: 100%;
 }
-nav .logo-container img {
+header nav .logo-container img {
   max-width: 180px;
+  max-height: 100%;
 }
-nav ul {
+header nav ul {
   width: 70%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
 }
-nav ul li {
-  color: white;
+header nav ul li {
+  height: max-content;
+  margin-right: 24px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  color: #049F47;
+}
+
+.container-xl {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container-lg {
@@ -31,6 +56,36 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #181818;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+section,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero {
+  margin-top: 90px;
+}
+.hero__container {
+  background-image: url("img/imagenes/estacion- antigua.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.hero__header {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

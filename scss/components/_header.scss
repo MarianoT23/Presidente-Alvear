@@ -1,25 +1,40 @@
-$headerHeight: 120px;
+$headerHeight: 90px;
 
-nav {
-    background-color: $primary;
-    display: flex;
+header {
+    background-color: $white;
+    position: fixed; top: 0; left: 0;
     height: $headerHeight;
+    box-shadow: 0 5px 10px rgba($black, .2);
 
-    .logo-container {
-        width: 30%;
+    nav {
+        display: flex; 
+        height: 100%;
 
-        img {
-            max-width: 180px;
+        .logo-container {
+            width: 30%; height: 100%;
+    
+            img {
+                max-width: 180px; max-height: 100%;
+            }
         }
-    }
+    
+        ul {
+            width: 70%;
+            display: flex; justify-content: flex-end; align-items: center;
+            list-style: none;
+    
+            li {
+                height: max-content;
+                margin-right: 24px;
+    
+                &:last-child {
+                    margin-right: 0;
+                }
 
-    ul {
-        width: 70%;
-        display: flex;
-        list-style: none;
-
-        li {
-            color: $white;
+                a {
+                    color: $primary;
+                }
+            }
         }
     }
 }
