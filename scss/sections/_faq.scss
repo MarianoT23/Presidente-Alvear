@@ -1,0 +1,11 @@
+.faq {
+
+    &__question {
+        margin-bottom: 12px;
+        font-weight: map-get($font-weights, 'medium');
+    }
+
+    &__answer {
+        margin-bottom: 24px;
+    }
+}
