@@ -15,7 +15,7 @@ header {
     }
 
     nav {
-        display: flex; 
+        display: flex; justify-content: space-between;
         height: 100%;
 
         .logo-container {

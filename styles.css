@@ -15,6 +15,7 @@ header.active {
 }
 header nav {
   display: flex;
+  justify-content: space-between;
   height: 100%;
 }
 header nav .logo-container {
@@ -177,6 +178,11 @@ section {
   z-index: 110;
   max-width: 500px;
 }
+@media (max-width: 768px) {
+  .hero__header {
+    position: relative;
+  }
+}
 .hero__title, .hero__subtitle {
   text-align: center;
 }
@@ -223,15 +229,25 @@ section {
 
 .contacto__subcontainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .contacto form {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .contacto form {
+    width: 100%;
+  }
+}
+.contacto form label {
+  font-weight: 500;
+}
 .contacto form input,
 .contacto form textarea {
   width: 100%;
+  margin-top: 8px;
 }
 .contacto__obligatorios, .contacto__opcionales {
   padding-right: 50px;
@@ -239,11 +255,26 @@ section {
 .contacto__obligatorios {
   width: 60%;
 }
+@media (max-width: 768px) {
+  .contacto__obligatorios {
+    width: 100%;
+  }
+}
 .contacto__opcionales {
   width: 40%;
 }
+@media (max-width: 768px) {
+  .contacto__opcionales {
+    width: 100%;
+  }
+}
 .contacto__social {
   width: 30%;
+}
+@media (max-width: 768px) {
+  .contacto__social {
+    width: 100%;
+  }
 }
 .contacto__social a {
   display: flex;

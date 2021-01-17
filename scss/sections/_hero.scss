@@ -21,6 +21,11 @@
         transform: translateY(-50%);
         z-index: 110;
         max-width: 500px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            position: relative;
+        }
     }
 
     &__title,
