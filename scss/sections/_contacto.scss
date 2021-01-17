@@ -1,0 +1,10 @@
+.contacto {
+    
+    &__container {
+        display: grid;
+    }
+
+    &__obligatorios {
+        grid-area: obligatorios;
+    }
+}

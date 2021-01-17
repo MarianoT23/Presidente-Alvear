@@ -28,8 +28,10 @@
 
     <section class="hero" id="hero">
         <div class="hero__container container-xl">
-            <h1 class="hero__header">Comisión Don Torcuato Independiente</h1>
-            <h2 class="section-title">Trabajamos por un nuevo municipio</h2>
+            <div class="hero__header"> 
+                <h1 class="hero__title">Comisión Don Torcuato Independiente</h1>
+                <h2 class="hero__subtitle">Trabajamos por un nuevo municipio</h2>
+            </div>
         </div>
     </section>
 
@@ -96,31 +98,33 @@
         <div class="contacto__container container-lg">
             <h2 class="section-title">Contactanos</h2>
             <form action="https://formspree.io/f/xknpkdyy" method="POST">
-                <label>
-                    Nombre:
-                    <input type="text" name="Nombre">
-                </label>
-                <label>
-                    Apellido:
-                    <input type="text" name="Apellido">
-                </label>
-                <label>
-                    Ciudad:
-                    <input type="text" name="Ciudad">
-                </label>
-                <label>
-                    Email:
-                    <input type="text" name="Email">
-                </label>
-                <label>
-                    Teléfono:
-                    <input type="text" name="Teléfono">
-                </label>
-                <label>
-                    Contanos como nos conociste o cuales son tu inquietudes:
-                    <textarea name="Mensaje"></textarea>
-                </label>         
-                <button type="submit">Enviar</button>
+                <div class="contacto__obligatorios">
+                    <label>
+                        Nombre y Apellido:
+                        <input type="text" name="Nombre y Apellido">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="text" name="Email">
+                    </label>
+                </div>
+                <div class="contacto__opcionales">
+                    <label>
+                        Ciudad:
+                        <input type="text" name="Ciudad">
+                    </label>
+                    <label>
+                        Teléfono:
+                        <input type="text" name="Teléfono">
+                    </label>
+                </div>
+                <div class="contacto__mensaje">
+                    <label>
+                        Contanos como nos conociste o cuales son tu inquietudes:
+                        <textarea name="Mensaje"></textarea>
+                    </label>         
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </div>
     </section>

@@ -40,9 +40,7 @@ header nav ul li a {
 
 .container-xl {
   width: 100%;
-  max-width: 1380px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1440px;
 }
 
 .container-lg {
@@ -74,6 +72,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .section-title {
@@ -93,16 +92,34 @@ footer {
   height: 600px;
 }
 .hero__container::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
 }
 .hero__header {
-  color: white;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 110;
+  max-width: 500px;
+}
+.hero__title, .hero__subtitle {
+  text-align: center;
+}
+.hero__title {
+  color: #049F47;
+  font-size: 42px;
+}
+.hero__subtitle {
+  color: gold;
+  font-size: 36px;
 }
 
 .diez-razones ul {
@@ -130,6 +147,13 @@ footer {
 }
 .faq__answer {
   margin-bottom: 24px;
+}
+
+.contacto__container {
+  display: grid;
+}
+.contacto__obligatorios {
+  grid-area: obligatorios;
 }
 
 /*# sourceMappingURL=styles.css.map */
