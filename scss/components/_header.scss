@@ -1,4 +1,5 @@
 $headerHeight: 90px;
+$headerHeightActive: 70px;
 
 header {
     background-color: $white;
@@ -6,6 +7,12 @@ header {
     z-index: 500;
     height: $headerHeight;
     box-shadow: 0 5px 10px rgba($black, .2);
+    transition: .3s linear;
+
+    &.active {
+        height: $headerHeightActive;
+        transition: .3s linear;
+    }
 
     nav {
         display: flex; 
@@ -23,9 +30,15 @@ header {
             width: 70%;
             display: flex; justify-content: flex-end; align-items: center;
             list-style: none;
+
+            // Mobile
+            @media (max-width: 768px) {
+                display: none;
+            }
     
             li {
                 height: max-content;
+                font-weight: map-get($font-weights, 'medium');
                 margin-right: 24px;
     
                 &:last-child {

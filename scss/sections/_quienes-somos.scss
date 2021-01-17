@@ -1,0 +1,6 @@
+.quienes-somos {
+
+    &__texto {
+        font-weight: map-get($font-weights, 'medium');
+    }
+}

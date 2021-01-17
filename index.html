@@ -10,7 +10,7 @@
 
 <body>
 
-    <header>
+    <header class="js-nav">
         <nav class="container-lg">
             <div class="logo-container">
                 <img src="img/logo.png" alt="Logo Comisión Don Torcuato Independiente">
@@ -23,6 +23,14 @@
                 <li><a href="https://www.facebook.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
                 <li><a href="https://www.instagram.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram"></a></li>
             </ul>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu__container" id="js-hamburger-menu-container">
+                <div class="hamburger-menu__lines" id="js-hamburger-menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -38,8 +46,10 @@
     <section class="quienes-somos" id="quienes-somos">
         <div class="quienes-somos__container container-lg">
             <h2 class="section-title">¿Quiénes Somos?</h2>
-            <h4>Somos un grupo de vecinos comprometidos con nuestra querida ciudad de Don Torcuato que decidimos continuar con un anhelado sueño de viejos vecinos: que Don Torcuato sea un municipio independiente.</h4> 
-            <h4>Nuestra ciudad cuenta con todas las condiciones y características necesarias para la creación de un nuevo municipio, creemos que es una deuda historica que tienen con nosotros. Por eso consideramos que es hora de trabajar en conjunto entre todos los sectores para generar las condiciones que permitan lograr este objetivo. Somos personas de distintas ideas e ideologías políticas pero que nos une un mismo sentimiento, que los torcuatenses podamos decidir nuestro propio camino.</h4>
+            <h4 class="quienes-somos__texto">Somos un grupo de vecinos comprometidos con nuestra querida ciudad de Don Torcuato que decidimos continuar con un anhelado sueño de viejos vecinos: que Don Torcuato sea un municipio independiente.
+            <br>
+            <br>
+            Nuestra ciudad cuenta con todas las condiciones y características necesarias para la creación de un nuevo municipio, creemos que es una deuda historica que tienen con nosotros. Por eso consideramos que es hora de trabajar en conjunto entre todos los sectores para generar las condiciones que permitan lograr este objetivo. Somos personas de distintas ideas e ideologías políticas pero que nos une un mismo sentimiento, que los torcuatenses podamos decidir nuestro propio camino.</h4>
         </div>
     </section>
 
@@ -97,35 +107,42 @@
     <section class="contacto" id="contacto"> 
         <div class="contacto__container container-lg">
             <h2 class="section-title">Contactanos</h2>
-            <form action="https://formspree.io/f/xknpkdyy" method="POST">
-                <div class="contacto__obligatorios">
-                    <label>
-                        Nombre y Apellido:
-                        <input type="text" name="Nombre y Apellido">
-                    </label>
-                    <label>
-                        Email:
-                        <input type="text" name="Email">
-                    </label>
+            <div class="contacto__subcontainer">
+                <form action="https://formspree.io/f/xknpkdyy" method="POST">
+                    <div class="contacto__obligatorios">
+                        <label>
+                            Nombre y Apellido:
+                            <input type="text" name="Nombre y Apellido">
+                        </label>
+                        <label>
+                            Email:
+                            <input type="text" name="Email">
+                        </label>
+                    </div>
+                    <div class="contacto__opcionales">
+                        <label>
+                            Ciudad:
+                            <input type="text" name="Ciudad">
+                        </label>
+                        <label>
+                            Teléfono:
+                            <input type="text" name="Teléfono">
+                        </label>
+                    </div>
+                    <div class="contacto__mensaje">
+                        <label>
+                            Contanos como nos conociste o cuales son tu inquietudes:
+                            <textarea name="Mensaje"></textarea>
+                        </label>         
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <div class="contacto__social">
+                    <a href="https://www.facebook.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook">Comisión Torcuato Independiente</a>
+                    <a href="https://www.instagram.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram">@dontorcuatoindependiente</a>
+                    <a href="mailto:comisiondti@gmail.com"><img src="img/icons/email.svg" alt="Email">comisiondti@gmail.com</a>
                 </div>
-                <div class="contacto__opcionales">
-                    <label>
-                        Ciudad:
-                        <input type="text" name="Ciudad">
-                    </label>
-                    <label>
-                        Teléfono:
-                        <input type="text" name="Teléfono">
-                    </label>
-                </div>
-                <div class="contacto__mensaje">
-                    <label>
-                        Contanos como nos conociste o cuales son tu inquietudes:
-                        <textarea name="Mensaje"></textarea>
-                    </label>         
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
