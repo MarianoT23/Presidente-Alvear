@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Don Torcuato Independiente</title>
+    <link rel="icon" type="image/png" href="img/logo--redondo.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXGVHX3ML2"></script>
     <script>
@@ -66,8 +67,8 @@
         <div class="diez-razones__container container-lg">
             <h2 class="section-title">Diez razones por las que proponemos ser un municipio independiente.</h2>
             <ul>
-                <li><div class="diez-razones__number">1</div> En los grandes municipios los recursos quedan atrapados en la cabecera y no se derraman a las ciudades periféricas.</li>
-                <li><div class="diez-razones__number">2</div> Mayor poder de decisión y de demanda por parte de los vecinos. Una menor extensión territorial y densidad poblacional permiten un acercamiento entre los vecinos y los gobernantes, generando una real participación del pueblo.</li>
+                <li><div class="diez-razones__number">1</div>En los grandes municipios los recursos quedan atrapados en la cabecera y no se derraman a las ciudades periféricas.</li>
+                <li><div class="diez-razones__number">2</div>Mayor poder de decisión y de demanda por parte de los vecinos. Una menor extensión territorial y densidad poblacional permiten un acercamiento entre los vecinos y los gobernantes, generando una real participación del pueblo.</li>
                 <li><div class="diez-razones__number">3</div> Los funcionarios municipales son vecinos del lugar y padecen los problemas locales por lo que se genera una mayor eficiencia y eficacia para resolver problemas locales.</li>
                 <li><div class="diez-razones__number">4</div> Los municipios chicos tienen la posibilidad de encarar políticas económicas que redunden en un desarrollo social y cultural de las ciudades periféricas que forman parte de municipios grandes, mejorando sustancialmente la calidad de vida de los vecinos.</li>
                 <li><div class="diez-razones__number">5</div> El aprovechamiento de la estructura municipal existente implica que no resulte necesario crear una estructura administrativa desde cero. Se absorberán los recursos humanos y materiales que prestan servicio en el territorio del nuevo municipio.</li>
@@ -80,6 +81,28 @@
         </div>
     </section>
 
+    <!-- Image Grid -->
+    <section class="img-grid">
+        <div class="img-grid__container container-xl">
+            <div class="img-grid__item img-grid__item--1">
+                <img src="img/grid/1.jpg" alt="Iglesia San Marcelo">
+            </div>
+            <div class="img-grid__item img-grid__item--2">
+                <img src="img/grid/2.JPG" alt="Estación de Tren de Don Torcuato">
+            </div>
+            <div class="img-grid__item img-grid__item--3">
+                <img src="img/grid/3.JPG" alt="Construcción Panamericana">
+            </div>
+            <div class="img-grid__item img-grid__item--4">
+                <img src="img/grid/4.JPG" alt="Club Caza y Pesca">
+            </div>
+            <div class="img-grid__item img-grid__item--5">
+                <img src="img/grid/5.JPG" alt="Ruta 202">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="faq__container container-lg">
             <h2 class="section-title">Preguntas Frecuentes</h2> 
@@ -117,33 +140,33 @@
         <div class="contacto__container container-lg">
             <h2 class="section-title">Contactanos</h2>
             <div class="contacto__subcontainer">
-                <form action="https://formspree.io/f/xknpkdyy" method="POST">
+                <form action="https://formspree.io/f/xknpkdyy" method="POST" id="js-form">
                     <div class="contacto__obligatorios">
-                        <label>
-                            Nombre y Apellido:
-                            <input type="text" name="Nombre y Apellido">
-                        </label>
-                        <label>
-                            Email:
-                            <input type="text" name="Email">
-                        </label>
+                        <div class="contacto__input-container">
+                            <input type="text" name="Nombre y Apellido" autocomplete="off">
+                            <label>Nombre y Apellido:</label>
+                        </div>
+                        <div class="contacto__input-container">
+                            <input type="text" name="Email" autocomplete="off">
+                            <label>Email:</label>
+                        </div>
                     </div>
                     <div class="contacto__opcionales">
-                        <label>
-                            Ciudad:
-                            <input type="text" name="Ciudad">
-                        </label>
-                        <label>
-                            Teléfono:
-                            <input type="text" name="Teléfono">
-                        </label>
+                        <div class="contacto__input-container">
+                            <input type="text" name="Ciudad" autocomplete="off">
+                            <label>Ciudad:</label>
+                        </div>
+                        <div class="contacto__input-container">
+                            <input type="text" name="Teléfono" autocomplete="off">
+                            <label>Teléfono:</label>
+                        </div>
                     </div>
                     <div class="contacto__mensaje">
                         <label>
                             Contanos como nos conociste o cuales son tu inquietudes:
                             <textarea name="Mensaje"></textarea>
                         </label>         
-                        <button type="submit">Enviar</button>
+                        <button type="submit" id="js-form-submit">Enviar</button>
                     </div>
                 </form>
                 <div class="contacto__social">

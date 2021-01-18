@@ -1,0 +1,42 @@
+.img-grid {
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:    'uno  dos    dos'
+                                'tres cuatro cinco';
+
+        // Mobile
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:    'uno tres' 
+                                    'cuatro cinco'
+                                    'dos dos';
+
+        }
+    }
+
+    &__item {
+
+        &--1 {
+            grid-area: uno;
+        }
+        &--2 {
+            grid-area: dos;
+        }
+        &--3 {
+            grid-area: tres;
+        }
+        &--4 {
+            grid-area: cuatro;
+        }
+        &--5 {
+            grid-area: cinco;
+        }
+
+        img {
+            width: 100%; height: 100%;
+        }
+    }
+}

@@ -1,6 +1,8 @@
 .quienes-somos {
 
     &__texto {
+        line-height: 24px;
         font-weight: map-get($font-weights, 'medium');
+        text-align: justify;
     }
 }

@@ -4,15 +4,17 @@
         list-style: none;
         padding: 0;
 
-        li {
+        li { 
+            display: flex;  align-items: center;
+            text-align: justify;
             margin-bottom: 24px;
         }
     }
 
     &__number {
-        display: inline-flex; justify-content: center; align-items: center;
+        display: flex; justify-content: center; align-items: center;
         background-color: $primary;
-        width: 40px; height: 40px;
+        min-width: 40px; height: 40px;
         border-radius: 50%;
         color: $secondary;
         margin-right: 12px;

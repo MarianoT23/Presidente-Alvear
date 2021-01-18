@@ -255,7 +255,9 @@ section {
 }
 
 .quienes-somos__texto {
+  line-height: 24px;
   font-weight: 500;
+  text-align: justify;
 }
 
 .diez-razones ul {
@@ -263,18 +265,53 @@ section {
   padding: 0;
 }
 .diez-razones ul li {
+  display: flex;
+  align-items: center;
+  text-align: justify;
   margin-bottom: 24px;
 }
 .diez-razones__number {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #049F47;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   border-radius: 50%;
   color: #FEDD5D;
   margin-right: 12px;
+}
+
+.img-grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "uno  dos    dos" "tres cuatro cinco";
+}
+@media (max-width: 768px) {
+  .img-grid__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "uno tres" "cuatro cinco" "dos dos";
+  }
+}
+.img-grid__item--1 {
+  grid-area: uno;
+}
+.img-grid__item--2 {
+  grid-area: dos;
+}
+.img-grid__item--3 {
+  grid-area: tres;
+}
+.img-grid__item--4 {
+  grid-area: cuatro;
+}
+.img-grid__item--5 {
+  grid-area: cinco;
+}
+.img-grid__item img {
+  width: 100%;
+  height: 100%;
 }
 
 .faq__question {
@@ -305,7 +342,40 @@ section {
 .contacto form input,
 .contacto form textarea {
   width: 100%;
-  margin-top: 8px;
+  height: 30px;
+  border: 1px solid rgba(24, 24, 24, 0.3);
+  margin: 8px 0 16px;
+  outline: none;
+  transition: 0.3s linear;
+}
+.contacto form input:focus,
+.contacto form textarea:focus {
+  border: 1px solid rgba(4, 159, 71, 0.5);
+  transition: 0.3s linear;
+}
+.contacto form input:focus + label,
+.contacto form textarea:focus + label {
+  color: #049F47;
+  transition: 0.3s linear;
+}
+.contacto form textarea {
+  height: 120px;
+}
+.contacto form button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 35px;
+  background-color: #049F47;
+  color: white;
+  border: 1px solid #049F47;
+  border-radius: 20px;
+  transition: 0.3s linear;
+}
+.contacto form button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #049F47;
+  transition: 0.3s linear;
 }
 .contacto__obligatorios, .contacto__opcionales {
   padding-right: 50px;
@@ -326,6 +396,13 @@ section {
     width: 100%;
   }
 }
+.contacto__input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacto__input-container label {
+  order: -1;
+}
 .contacto__social {
   width: 30%;
 }
@@ -337,6 +414,8 @@ section {
 .contacto__social a {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  color: #181818;
   margin-bottom: 12px;
 }
 .contacto__social a img {
