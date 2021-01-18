@@ -14,17 +14,27 @@
             background-color: rgba($black, .7);
             clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
         }
+
+        // Mobile
+        @media (max-width: 768px) {
+            display: flex; justify-content: center; align-items: center;
+
+            &::after {
+                background-color: rgba($black, .5);
+                clip-path: none;
+            }
+        }
     }
 
     &__header {
-        position: absolute; right: 5%; top: 50%;
+        position: absolute; top: 50%; right: 5%; 
         transform: translateY(-50%);
         z-index: 110;
         max-width: 500px;
 
         // Mobile
         @media (max-width: 768px) {
-            position: relative;
+            position: relative; top: 0; right: 0;
         }
     }
 
@@ -37,10 +47,20 @@
         color: $primary;
         font-size: 42px;
         text-transform: uppercase;
+
+        // Mobile
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
     }
 
     &__subtitle {
         color: $secondary;
         font-size: 36px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 }
