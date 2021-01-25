@@ -47,6 +47,15 @@ window.addEventListener('load', function(){
         });
     }
 
+    // FAQ
+    const faqQuestions = document.querySelectorAll('.js-faq-question')
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('active')
+        })
+    });
+
     console.timeEnd("JS is loading fine");
 
 })
