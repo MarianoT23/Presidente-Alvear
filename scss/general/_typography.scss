@@ -5,4 +5,9 @@
 .section-title {
     color: $primary;
     font-size: 32px;
+
+    // Mobile
+    @media (max-width: 992px) {
+        text-align: center;
+    }
 }

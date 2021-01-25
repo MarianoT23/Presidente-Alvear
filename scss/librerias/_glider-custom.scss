@@ -1,0 +1,10 @@
+.slider-dots {
+
+    .glider-dot {
+        background-color: $primary;
+
+        &.active {
+            background-color: $secondary;
+        }
+    }
+}

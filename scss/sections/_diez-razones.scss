@@ -1,13 +1,23 @@
 .diez-razones {
 
-    ul {
+    &__subcontainer {
         list-style: none;
         padding: 0;
 
-        li { 
-            display: flex;  align-items: center;
-            text-align: justify;
-            margin-bottom: 24px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+    &__razon { 
+        display: flex;  align-items: center;
+        text-align: justify;
+        margin-bottom: 24px;
+
+        // Mobile
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            margin: 0 20px;
         }
     }
 
@@ -18,5 +28,12 @@
         border-radius: 50%;
         color: $secondary;
         margin-right: 12px;
+
+        // Mobile
+        @media (max-width: 992px) {
+            margin-right: 0; margin-bottom: 24px;
+            width: 60px; height: 60px;
+            font-size: 24px;
+        }
     }
 }
