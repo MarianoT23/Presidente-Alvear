@@ -10,4 +10,18 @@
     @media (max-width: 992px) {
         text-align: center;
     }
+
+    &--white {
+        color: $white;
+    }
+}
+
+// Section Separators (HR's)
+.hr-container {
+    display: flex; justify-content: center;
+}
+hr {
+    width: 100%; max-width: 1440px;
+    margin-left: 10px; margin-right: 10px; 
+    border-color: rgba($primary, .5);
 }

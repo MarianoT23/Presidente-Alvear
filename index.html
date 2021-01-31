@@ -25,6 +25,11 @@
 
 <body>
 
+    <!-- Facebook Plugin -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0" nonce="1MYVaRRo"></script>
+
+    <!-- Header -->
     <header class="js-nav">
         <nav class="container-lg">
             <div class="logo-container">
@@ -54,7 +59,7 @@
     <section class="hero" id="hero">
         <div class="hero__container container-xl">
             <div class="hero__header"> 
-                <h1 class="hero__title">Comisión Don Torcuato Independiente</h1>
+                <h1 class="hero__title">Comisión <br> Don Torcuato <br> Independiente</h1>
                 <h2 class="hero__subtitle">Trabajamos por un nuevo municipio</h2>
             </div>
         </div>
@@ -70,6 +75,11 @@
             Nuestra ciudad cuenta con todas las condiciones y características necesarias para la creación de un nuevo municipio, creemos que es una deuda historica que tienen con nosotros. Por eso consideramos que es hora de trabajar en conjunto entre todos los sectores para generar las condiciones que permitan lograr este objetivo. Somos personas de distintas ideas e ideologías políticas pero que nos une un mismo sentimiento, que los torcuatenses podamos decidir nuestro propio camino.</h4>
         </div>
     </section>
+
+    <!-- HR -->
+    <div class="hr-container">
+        <hr>
+    </div>
 
     <!-- Diez Razones -->
     <section class="diez-razones" id="diez-razones">
@@ -146,9 +156,10 @@
         </div>
     </section>
 
+    <!-- Contacto -->
     <section class="contacto" id="contacto"> 
         <div class="contacto__container container-lg">
-            <h2 class="section-title">Contactanos</h2>
+            <h2 class="section-title section-title--white">Contactanos</h2>
             <div class="contacto__subcontainer">
                 <form action="https://formspree.io/f/xknpkdyy" method="POST" id="js-form">
                     <div class="contacto__obligatorios">
@@ -180,16 +191,81 @@
                     </div>
                 </form>
                 <div class="contacto__social">
-                    <a href="https://www.facebook.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook">Comisión Torcuato Independiente</a>
-                    <a href="https://www.instagram.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram">@dontorcuatoindependiente</a>
-                    <a href="mailto:comisiondti@gmail.com"><img src="img/icons/email.svg" alt="Email">comisiondti@gmail.com</a>
+                    <a href="https://www.facebook.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/facebook--white.svg" alt="Facebook">Comisión Torcuato Independiente</a>
+                    <a href="https://www.instagram.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/instagram--white.svg" alt="Instagram">@dontorcuatoindependiente</a>
+                    <a href="mailto:comisiondti@gmail.com"><img src="img/icons/email--white.svg" alt="Email">comisiondti@gmail.com</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Novedades -->
+    <section class="novedades">
+        <div class="novedades__container container-lg">
 
+            <h2 class="section-title">Novedades</h2>
+
+            <div class="novedades__feed">
+
+                <!-- Publicaciones -->
+                <div class="novedades__feed-medios">
+                    <a class="novedades__feed-medios-publicacion" href="https://norteonline.com.ar/el-sueno-de-un-don-torcuato-independiente/" target="_blank">
+                        <img src="img/publicaciones/norteonline-17-01-21.jpg" alt="Norte Onlie - El sueño de un Don Torcuato Independiente">  
+                        <div class="publicacion-header">
+                            <h3>El sueño de un Don Torcuato independiente</h3>
+                            <h4><span>Publicado:</span> Norte Online - 17/01/2021</h4>
+                        </div>                      
+                    </a>
+                </div>
+
+                <!-- Facebook Embed -->
+                <div class="fb-page novedades__feed-fb" id="js-fb-embed" data-href="https://www.facebook.com/dontorcuatoindependiente" data-tabs="timeline" data-width="400" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/facebook">Facebook</a>
+                    </blockquote>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__container container-lg">
+
+            <!-- Logo -->
+            <div class="footer__logo-container">
+                <img src="img/logo--redondo.png" alt="Comisión Don Torcuato Independiente Logo" class="footer__logo">
+            </div>
+
+            <!-- Site Map -->
+            <div class="footer__site-map">
+                <div class="footer__comision">
+                    <h3>Sobre la Comisión</h3>
+                    <a href="#quienes-somos">¿Quiénes Somos?</a>
+                    <a href="#faq">Preguntas Frecuentes</a>
+                    <a href="#contacto">Contactanos</a>
+                </div>
+                <div class="footer__proyecto">
+                    <h3>Sobre el Proyecto</h3>
+                    <a href="#diez-razones">Diez Razones</a>
+                    <a href="#">Historia</a>
+                </div>
+                <div class="footer__torcuato">
+                    <h3>Sobre nuestra ciudad</h3>
+                    <a href="#">Historia</a>
+                </div>
+            </div>
+
+            <!-- Social -->
+            <div class="footer__social">
+                <a href="https://www.facebook.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/facebook--gold.svg" alt="Facebook">Comisión Torcuato Independiente</a>
+                <a href="https://www.instagram.com/dontorcuatoindependiente/" target="_blank"><img src="img/icons/instagram--gold.svg" alt="Instagram">@dontorcuatoindependiente</a>
+                <a href="mailto:comisiondti@gmail.com"><img src="img/icons/email--gold.svg" alt="Email">comisiondti@gmail.com</a>
+            </div>
+
+        </div>
     </footer>
     
 </body>

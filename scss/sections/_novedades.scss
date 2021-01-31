@@ -1,0 +1,43 @@
+.novedades {
+    padding: 60px 0;
+
+    &__feed {
+        display: flex;
+    }
+
+    &__feed-medios {
+        width: 60%;
+    }
+
+    &__feed-medios-publicacion {
+        display: block;
+        box-shadow: 5px 5px 15px rgba($black, .25);
+
+        img {
+            width: 100%; height: auto;
+        }
+
+        .publicacion-header {
+            padding: 10px 30px;
+
+            h3 {
+                font-size: 22px;
+                color: $primary;
+            }
+            h4 {
+                font-size: 14px;
+                font-weight: map-get($font-weights, 'regular');
+
+                span {
+                    color: $primary;
+                    font-weight: map-get($font-weights, 'medium');
+                }
+            }
+        }
+    }
+
+    &__feed-fb {
+        width: 40%;
+        display: flex !important; justify-content: flex-end;
+    }
+}
