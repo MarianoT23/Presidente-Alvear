@@ -4,5 +4,15 @@
         line-height: 24px;
         font-weight: map-get($font-weights, 'medium');
         text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    &__image-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__image {
+        max-width: 100%;
     }
 }

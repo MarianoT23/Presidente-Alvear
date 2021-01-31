@@ -42,6 +42,11 @@ footer,
         display: flex; 
         margin-top: 40px;
 
+        // Mobile
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
         a {
             display: flex; align-items: center;
             font-size: 14px;
