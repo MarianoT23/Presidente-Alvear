@@ -9,6 +9,13 @@ footer,
 
     &__logo-container {
         width: 35%;
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+        }
     }
 
     &__logo {
@@ -19,8 +26,21 @@ footer,
         width: 65%;
         display: flex; justify-content: space-around;
 
+        // Mobile
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            width: 100%;
+            order: -1;
+        }
+
         div {
             width: 30%;
+
+            // Mobile
+            @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
 
             h3 {
                 font-size: 16px;
@@ -33,6 +53,12 @@ footer,
                 font-weight: map-get($font-weights, 'regular');
                 color: $white;
                 margin-bottom: 8px;
+                transition: .3s linear;
+
+                &:hover {
+                    color: $secondary;
+                    transition: .3s linear;
+                }
             }
         }
     }
@@ -53,6 +79,11 @@ footer,
             font-weight: map-get($font-weights, 'medium');
             color: $secondary;
             margin-right: 24px;
+
+            // Mobile
+            @media (max-width: 768px) {
+                margin: 0 auto 14px;
+            }
 
             img {
                 margin-right: 12px;

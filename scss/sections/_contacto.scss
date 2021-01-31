@@ -67,6 +67,11 @@
     &__obligatorios,
     &__opcionales {
         padding-right: 50px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            padding-right: 0;
+        }
     }
 
     &__obligatorios {

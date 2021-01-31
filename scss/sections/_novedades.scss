@@ -11,6 +11,7 @@
         // Mobile
         @media (max-width: 768px) {
             width: 100%;
+            margin-bottom: 70px;
         }
     }
 
@@ -18,9 +19,22 @@
         display: block;
         box-shadow: 5px 5px 15px rgba($black, .25);
 
-        img {
-            width: 100%; height: auto;
+        &:hover {
+
+            img {
+                transform: scale(1.02);
+                transition: .3s linear;
+            }
         }
+
+        .publicacion-image-container {
+            overflow: hidden;
+
+            img {
+                width: 100%; height: auto;
+                transition: .3s linear;
+            }
+            }
 
         .publicacion-header {
             padding: 10px 30px;
