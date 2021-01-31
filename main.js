@@ -55,20 +55,8 @@ window.addEventListener('load', function(){
             question.classList.toggle('active')
         })
     });
-
-    // Facebook Feed
-    setTimeout(function(){ 
-        let fbIframe = document.querySelector("#js-fb-embed iframe")
-        console.log(fbIframe)
-    }, 3000);
-
+  
     
-
-
-        /*let doc = fbIframe.contentDocument
-        doc.body.innerHTML = doc.body.innerHTML + '<style>/******* Put your styles here *******</style>'*/
-    
-
     console.timeEnd("JS is loading fine");
 
 })
