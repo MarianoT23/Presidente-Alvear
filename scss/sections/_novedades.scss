@@ -2,11 +2,16 @@
     padding: 60px 0;
 
     &__feed {
-        display: flex;
+        display: flex; flex-wrap: wrap;
     }
 
     &__feed-medios {
         width: 60%;
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__feed-medios-publicacion {
@@ -39,5 +44,10 @@
     &__feed-fb {
         width: 40%;
         display: flex !important; justify-content: flex-end;
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 }

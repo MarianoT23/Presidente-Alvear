@@ -763,9 +763,15 @@ hr {
 }
 .novedades__feed {
   display: flex;
+  flex-wrap: wrap;
 }
 .novedades__feed-medios {
   width: 60%;
+}
+@media (max-width: 768px) {
+  .novedades__feed-medios {
+    width: 100%;
+  }
 }
 .novedades__feed-medios-publicacion {
   display: block;
@@ -794,6 +800,11 @@ hr {
   width: 40%;
   display: flex !important;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .novedades__feed-fb {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
