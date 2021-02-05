@@ -520,6 +520,11 @@ hr {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .documentos-historicos__subcontainer {
+    grid-template-columns: 1fr;
+  }
+}
 .documentos-historicos__documento-container {
   display: flex;
   width: 100%;
