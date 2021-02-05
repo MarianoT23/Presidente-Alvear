@@ -15,10 +15,21 @@
         text-align: justify;
         padding-right: 80px;
         margin-bottom: 60px;
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-right: 0;
+        }
     }
 
     &__conoce-mas {
         width: 20%;
+
+        // Mobile
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__conoce-mas-cta {

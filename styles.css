@@ -647,8 +647,19 @@ hr {
   padding-right: 80px;
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .quienes-somos__texto {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .quienes-somos__conoce-mas {
   width: 20%;
+}
+@media (max-width: 768px) {
+  .quienes-somos__conoce-mas {
+    width: 100%;
+  }
 }
 .quienes-somos__conoce-mas-cta {
   display: flex;
