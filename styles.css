@@ -508,6 +508,53 @@ hr {
   background-color: #FEDD5D;
 }
 
+.historia-proyecto {
+  margin-top: 90px;
+}
+.historia-proyecto__container {
+  text-align: justify;
+}
+
+.documentos-historicos__subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.documentos-historicos__documento-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: grey;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.documentos-historicos__documento-container:hover .documentos-historicos__documento-img {
+  transform: scale(1.02);
+  transition: 0.3s linear;
+}
+.documentos-historicos__documento-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s linear;
+}
+.documentos-historicos__documento-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 15px 0;
+  color: white;
+}
+
 .hero {
   margin-top: 90px;
   padding-top: 0;
@@ -580,11 +627,40 @@ hr {
   }
 }
 
+.quienes-somos__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.quienes-somos__title {
+  width: 100%;
+}
 .quienes-somos__texto {
+  width: 70%;
   line-height: 24px;
   font-weight: 500;
   text-align: justify;
+  padding-right: 80px;
   margin-bottom: 60px;
+}
+.quienes-somos__conoce-mas {
+  width: 20%;
+}
+.quienes-somos__conoce-mas-cta {
+  display: flex;
+  justify-content: center;
+  background-color: #049F47;
+  color: white;
+  border: 1px solid #049F47;
+  border-radius: 25px;
+  padding: 15px 0;
+  min-width: 240px;
+  margin-bottom: 20px;
+  transition: 0.3s linear;
+}
+.quienes-somos__conoce-mas-cta:hover {
+  background-color: white;
+  color: #049F47;
+  transition: 0.3s linear;
 }
 .quienes-somos__image-container {
   width: 100%;
