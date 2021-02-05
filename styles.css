@@ -518,7 +518,7 @@ hr {
 .documentos-historicos__subcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  gap: 20px;
 }
 .documentos-historicos__documento-container {
   display: flex;
