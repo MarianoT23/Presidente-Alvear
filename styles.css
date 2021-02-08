@@ -508,6 +508,13 @@ hr {
   background-color: #FEDD5D;
 }
 
+.historia-torcuato {
+  margin-top: 90px;
+}
+.historia-torcuato__container {
+  text-align: justify;
+}
+
 .historia-proyecto {
   margin-top: 90px;
 }
@@ -554,10 +561,13 @@ hr {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 0;
   padding: 15px 0;
+  min-height: 68px;
   color: white;
+  text-align: center;
 }
 
 .hero {
