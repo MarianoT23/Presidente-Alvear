@@ -60,10 +60,13 @@ window.addEventListener('load', function(){
     const filterTodos = document.getElementById('js-documento-filter--todos')
     const filterCartas = document.getElementById('js-documento-filter--cartas')
     const filterPrensa = document.getElementById('js-documento-filter--prensa')
+    const filterInstitucionales = document.getElementById('js-documento-filter--institucionales')
     const documentosHistoricosTodos = document.querySelectorAll('.documentos-historicos__documento-container')
     const documentosHistoricosCartas = document.querySelectorAll('.js-carta')
     const documentosHistoricosPrensa = document.querySelectorAll('.js-prensa')
+    const documentosHistoricosInstitucionales = document.querySelectorAll('.js-institucionales')
     const documentosHistoricosContainer = document.getElementById('js-documentos-historicos')
+
 
     if (documentosHistoricosContainer) {
         filterTodos.classList.add('active')
@@ -75,10 +78,14 @@ window.addEventListener('load', function(){
             filterTodos.classList.add('active')
             filterCartas.classList.remove('active')
             filterPrensa.classList.remove('active')
+            filterInstitucionales.classList.remove('active')
             documentosHistoricosCartas.forEach(element => {
                 element.classList.add('active')
             });
             documentosHistoricosPrensa.forEach(element => {
+                element.classList.add('active')
+            })
+            documentosHistoricosInstitucionales.forEach(element => {
                 element.classList.add('active')
             })
         })
@@ -87,10 +94,14 @@ window.addEventListener('load', function(){
             filterTodos.classList.remove('active')
             filterCartas.classList.add('active')
             filterPrensa.classList.remove('active')
+            filterInstitucionales.classList.remove('active')
             documentosHistoricosCartas.forEach(element => {
                 element.classList.add('active')
             });
             documentosHistoricosPrensa.forEach(element => {
+                element.classList.remove('active')
+            })
+            documentosHistoricosInstitucionales.forEach(element => {
                 element.classList.remove('active')
             })
         })
@@ -99,11 +110,31 @@ window.addEventListener('load', function(){
             filterTodos.classList.remove('active')
             filterCartas.classList.remove('active')
             filterPrensa.classList.add('active')
+            filterInstitucionales.classList.remove('active')
             documentosHistoricosPrensa.forEach(element => {
                 element.classList.add('active')
             });
             documentosHistoricosCartas.forEach(element => {
                 element.classList.remove('active')
+            })
+            documentosHistoricosInstitucionales.forEach(element => {
+                element.classList.remove('active')
+            })
+        })
+
+        filterInstitucionales.addEventListener('click', () => {
+            filterTodos.classList.remove('active')
+            filterCartas.classList.remove('active')
+            filterPrensa.classList.remove('active')
+            filterInstitucionales.classList.add('active')
+            documentosHistoricosPrensa.forEach(element => {
+                element.classList.remove('active')
+            });
+            documentosHistoricosCartas.forEach(element => {
+                element.classList.remove('active')
+            })
+            documentosHistoricosInstitucionales.forEach(element => {
+                element.classList.add('active')
             })
         })
     }
