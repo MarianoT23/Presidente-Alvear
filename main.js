@@ -2,6 +2,8 @@ console.time('JS is loading fine')
 
 window.addEventListener('load', function(){
 
+    /* --- Components --- */
+
     // Navbar Active
     document.addEventListener('scroll', function() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -34,6 +36,9 @@ window.addEventListener('load', function(){
         })
     });
 
+
+    /* --- Page > Homepage --- */
+
     // Slider (Diez Razones)
     if (window.innerWidth < 992) {
         new Glider(document.querySelector('#js-diez-razones-slider'), {
@@ -55,6 +60,22 @@ window.addEventListener('load', function(){
             question.classList.toggle('active')
         })
     });
+
+
+    /* --- Page > Sobre Proyecto --- */
+
+    // Slider (Sobre Proyecto)
+    if (document.querySelector('.js-foto-slider')) {
+        new Glider(document.querySelector('.js-foto-slider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            scrollLock: true,
+            scrollLockDelay: 0,
+            draggable: true,
+            duration: 0,
+            dots: '#js-dots'
+        });
+    }
   
     // Documentos Históricos (Filter)
     const filterTodos = document.getElementById('js-documento-filter--todos')
@@ -137,8 +158,10 @@ window.addEventListener('load', function(){
                 element.classList.add('active')
             })
         })
-    }
 
+
+        /* --- Page > Historia Torcuato --- */
+    }
 
     console.timeEnd("JS is loading fine");
 
