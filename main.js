@@ -71,9 +71,13 @@ window.addEventListener('load', function(){
             slidesToScroll: 1,
             scrollLock: true,
             scrollLockDelay: 0,
-            draggable: true,
+            //draggable: true,
             duration: 0,
-            dots: '#js-dots'
+            //dots: '#js-dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+              }
         });
     }
   

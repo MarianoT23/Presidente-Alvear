@@ -515,9 +515,6 @@ hr {
   text-align: justify;
 }
 
-.historia-proyecto {
-  margin-top: 90px;
-}
 .historia-proyecto__container {
   text-align: justify;
 }
@@ -590,6 +587,47 @@ hr {
   min-height: 68px;
   color: white;
   text-align: center;
+}
+
+.foto-slider {
+  margin-top: 90px;
+}
+.foto-slider__container {
+  position: relative;
+}
+.foto-slider .glider-prev,
+.foto-slider .glider-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 80px;
+}
+.foto-slider .glider-prev::before,
+.foto-slider .glider-next::before {
+  content: url(img/icons/slider-arrow.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px black);
+}
+.foto-slider .glider-prev {
+  left: 20px;
+}
+.foto-slider .glider-prev::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.foto-slider .glider-next {
+  right: 20px;
+}
+.foto-slider .glider {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.foto-slider .glider-track {
+  max-height: 700px;
+}
+.foto-slider .glider-slide {
+  object-fit: cover;
 }
 
 .hero {
