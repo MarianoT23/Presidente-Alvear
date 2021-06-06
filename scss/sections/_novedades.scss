@@ -32,10 +32,11 @@
         }
 
         .publicacion-image-container {
+            max-height: 250px;
             overflow: hidden;
 
             img {
-                width: 100%; height: auto;
+                width: 100%; height: auto; max-height: 100%;
                 transition: .3s linear;
             }
             }
@@ -66,6 +67,24 @@
         // Mobile
         @media (max-width: 768px) {
             width: 100%;
+        }
+    }
+
+    &__ver-mas-btn {
+        display: flex; justify-content: center;
+        background-color: $primary;
+        color: $white;
+        border: 1px solid $primary;
+        border-radius: 25px;
+        padding: 15px 0;
+        min-width: 200px;
+        margin-top: 40px;
+        transition: .3s linear;
+
+        &:hover {
+            background-color: $white;
+            color: $primary;
+            transition: .3s linear;
         }
     }
 }
